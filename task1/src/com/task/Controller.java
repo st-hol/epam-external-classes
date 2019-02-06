@@ -22,13 +22,12 @@ public class Controller {
     public void execute(){
         Scanner scan = new Scanner(System.in);
 
-        model.setValue(inputGoodString(scan));
-
+        model.setValue(inputRightString(scan));
         view.printSentence(View.ASSEMBLED_SENTENCE, model.getValue());
     }
 
     // The Utility methods
-    public String inputGoodString(Scanner scan) {
+    public String inputRightString(Scanner scan) {
         String input;
 
         view.printMessage(View.ENTER_STRING);
@@ -44,4 +43,36 @@ public class Controller {
         }
         return model.getValue();
     }
+
+//    // The Utility methods
+//    public String inputRightString(Scanner scan) {
+//        String input1, input2;
+//        boolean cond;
+//
+//        view.printMessage(View.ENTER_STRING);
+//        do {
+//            input1 = scan.next();
+//            cond = !(input1.equals("Hello") || input1.equals("world!"));
+//            if (cond){
+//                view.printMessage(View.INCORRECT_DATA_NOTIFICATION);
+//            }
+//        }while(cond);
+//
+//        do {
+//            input2 = scan.next();
+//            cond =  !(input2.equals("Hello") || input2.equals("world!")) || input2.equals(input1);
+//            if (cond){
+//                view.printMessage(View.INCORRECT_DATA_NOTIFICATION);
+//            }
+//        }while ( !(input2.equals("Hello") || input2.equals("world!")) || input2.equals(input1));
+//
+//        if (input1.equals("Hello")) {
+//            model.assembleOurMessage(input1 + " " + input2);
+//        } else {
+//            model.assembleOurMessage(input2 + " " + input1);
+//        }
+//
+//        return model.getValue();
+//    }
+
 }
