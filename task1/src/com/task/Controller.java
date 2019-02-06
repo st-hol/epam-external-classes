@@ -8,6 +8,8 @@ public class Controller {
 
     // The sample set
     //public static  HashSet<String> MATCHES = new HashSet<>(Arrays.asList("Hello", "world!"));
+    public static final String HELLO = "Hello";
+    public static final String WORLD = "world!";
 
     // Constructor
     private Model model;
@@ -27,24 +29,18 @@ public class Controller {
     }
 
 
-
-    /**
-     * This method gets right words input from user.
-     * @param scan:Scanner
-     * @return :String
-     */
-    public String inputRightString(Scanner sc) {
+    public String inputRightString(Scanner scan) {
         int c = 0;
 
         while (c < 2) {
             view.printMessage(View.ENTER_STRING);
 
-            while (!sc.hasNext("Hello") && !sc.hasNext("world!")) {
+            while ( ! scan.hasNext(HELLO) &&  ! scan.hasNext(WORLD)) {
                 view.printMessage(View.INCORRECT_DATA_NOTIFICATION + "\n" + View.ENTER_STRING);
-                sc.next();
+                scan.next();
             }
 
-            c += model.assembleOurMessage(sc.next());
+            c += model.assembleOurMessage(scan.next());
         }
 
         return model.getValue();
