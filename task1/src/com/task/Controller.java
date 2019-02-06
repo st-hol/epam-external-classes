@@ -26,7 +26,15 @@ public class Controller {
         view.printSentence(View.ASSEMBLED_SENTENCE, model.getValue());
     }
 
-    // The Utility methods
+    /**
+     * This method gets right input from user.
+     * Works by comparing input with MATCHES set.
+     * In the case of a match, writes the appropriate word in the variable.
+     * This word is removed from the set so that it is not taken more than once.
+     * Because the loop runs until the set contains elements.
+     * @param scan:Scanner
+     * @return :String
+     */
     public String inputRightString(Scanner scan) {
         String input;
 
@@ -44,29 +52,35 @@ public class Controller {
         return model.getValue();
     }
 
+
+
+
 //    // The Utility methods
 //    public String inputRightString(Scanner scan) {
 //        String input1, input2;
 //        boolean cond;
 //
-//        view.printMessage(View.ENTER_STRING);
+//        /* */
 //        do {
+//            view.printMessage(View.ENTER_STRING);
 //            input1 = scan.next();
-//            cond = !(input1.equals("Hello") || input1.equals("world!"));
+//            cond = !(input1.equalsIgnoreCase("Hello") || input1.equalsIgnoreCase("world!"));
 //            if (cond){
 //                view.printMessage(View.INCORRECT_DATA_NOTIFICATION);
 //            }
 //        }while(cond);
 //
 //        do {
+//            view.printMessage(View.ENTER_STRING);
 //            input2 = scan.next();
-//            cond =  !(input2.equals("Hello") || input2.equals("world!")) || input2.equals(input1);
+//            cond =  !(input2.equalsIgnoreCase("Hello") || input2.equalsIgnoreCase("world!"))
+//                    || input2.equalsIgnoreCase(input1);
 //            if (cond){
 //                view.printMessage(View.INCORRECT_DATA_NOTIFICATION);
 //            }
-//        }while ( !(input2.equals("Hello") || input2.equals("world!")) || input2.equals(input1));
+//        }while (cond);
 //
-//        if (input1.equals("Hello")) {
+//        if (input1.equalsIgnoreCase("Hello")) {
 //            model.assembleOurMessage(input1 + " " + input2);
 //        } else {
 //            model.assembleOurMessage(input2 + " " + input1);
