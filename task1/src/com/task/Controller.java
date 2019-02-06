@@ -1,13 +1,13 @@
 package com.task;
 
 import java.util.Scanner;
-import java.util.HashSet;
-import java.util.Arrays;
+//import java.util.HashSet;
+//import java.util.Arrays;
 
 public class Controller {
 
     // The sample set
-    public static  HashSet<String> MATCHES = new HashSet<>(Arrays.asList("Hello", "world!"));
+    //public static  HashSet<String> MATCHES = new HashSet<>(Arrays.asList("Hello", "world!"));
 
     // Constructor
     private Model model;
@@ -26,6 +26,29 @@ public class Controller {
         view.printSentence(View.ASSEMBLED_SENTENCE, model.getValue());
     }
 
+
+
+    // The Utility methods
+    public String inputRightString(Scanner sc) {
+        int c = 0;
+
+        while (c < 2) {
+            view.printMessage(View.ENTER_STRING);
+
+            while (!sc.hasNext("Hello") && !sc.hasNext("world!")) {
+                view.printMessage(View.INCORRECT_DATA_NOTIFICATION + "\n" + View.ENTER_STRING);
+                sc.next();
+            }
+
+            c += model.assembleOurMessage(sc.next());
+        }
+
+        return model.getValue();
+    }
+
+
+
+
     /**
      * This method gets right input from user.
      * Works by comparing input with MATCHES set.
@@ -35,22 +58,22 @@ public class Controller {
      * @param scan:Scanner
      * @return :String
      */
-    public String inputRightString(Scanner scan) {
-        String input;
-
-        view.printMessage(View.ENTER_STRING);
-        while (! MATCHES.isEmpty()) {
-            input = scan.next();
-            if (MATCHES.contains(input)) {
-                view.printMessage(View.CORRECT_DATA_NOTIFICATION + "\n" + View.ENTER_STRING);
-                MATCHES.remove(input);
-                model.assembleOurMessage(input);
-            } else {
-                view.printMessage(View.INCORRECT_DATA_NOTIFICATION);
-            }
-        }
-        return model.getValue();
-    }
+//    public String inputRightString(Scanner scan) {
+//        String input;
+//
+//        view.printMessage(View.ENTER_STRING);
+//        while (! MATCHES.isEmpty()) {
+//            input = scan.next();
+//            if (MATCHES.contains(input)) {
+//                view.printMessage(View.CORRECT_DATA_NOTIFICATION + "\n" + View.ENTER_STRING);
+//                MATCHES.remove(input);
+//                model.assembleOurMessage(input);
+//            } else {
+//                view.printMessage(View.INCORRECT_DATA_NOTIFICATION);
+//            }
+//        }
+//        return model.getValue();
+//    }
 
 
 
