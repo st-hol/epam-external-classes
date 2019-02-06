@@ -28,7 +28,11 @@ public class Controller {
 
 
 
-    // The Utility methods
+    /**
+     * This method gets right words input from user.
+     * @param scan:Scanner
+     * @return :String
+     */
     public String inputRightString(Scanner sc) {
         int c = 0;
 
