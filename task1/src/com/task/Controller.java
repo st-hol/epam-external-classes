@@ -6,11 +6,9 @@ import java.util.Arrays;
 
 public class Controller {
 
-    // The Constant
-    //public static final String[] GOOD_WORDS = new String[]{"hello", "world"};
-    public  static final HashSet<String> GOOD = new HashSet<>(Arrays.asList("Hello", "world!"));
-    //public  static final String pattern = "Hello world!";
-    //StringBuilder pattern = new StringBuilder("HELLO WORLD!");
+    // The pattern
+    public static  HashSet<String> GOOD = new HashSet<>(Arrays.asList("Hello", "world!"));
+
     // Constructor
     private Model model;
     private View view;
@@ -31,7 +29,6 @@ public class Controller {
 
     // The Utility methods
     public String inputGoodString(Scanner scan) {
-
         String input;
 
         view.printMessage(View.ENTER_STRING);
@@ -45,7 +42,6 @@ public class Controller {
                 view.printMessage(View.INCORRECT_DATA_NOTIFICATION);
             }
         }
-
         return model.getValue();
     }
 }
