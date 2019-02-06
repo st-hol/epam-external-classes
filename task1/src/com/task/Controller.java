@@ -6,7 +6,7 @@ import java.util.Arrays;
 
 public class Controller {
 
-    // The pattern
+    // The sample set
     public static  HashSet<String> GOOD = new HashSet<>(Arrays.asList("Hello", "world!"));
 
     // Constructor
