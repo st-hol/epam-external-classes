@@ -7,7 +7,7 @@ import java.util.Arrays;
 public class Controller {
 
     // The sample set
-    public static  HashSet<String> GOOD = new HashSet<>(Arrays.asList("Hello", "world!"));
+    public static  HashSet<String> MATCHES = new HashSet<>(Arrays.asList("Hello", "world!"));
 
     // Constructor
     private Model model;
@@ -32,11 +32,11 @@ public class Controller {
         String input;
 
         view.printMessage(View.ENTER_STRING);
-        while (! GOOD.isEmpty()) {
+        while (! MATCHES.isEmpty()) {
             input = scan.next();
-            if (GOOD.contains(input)) {
+            if (MATCHES.contains(input)) {
                 view.printMessage(View.CORRECT_DATA_NOTIFICATION + "\n" + View.ENTER_STRING);
-                GOOD.remove(input);
+                MATCHES.remove(input);
                 model.assembleOurMessage(input);
             } else {
                 view.printMessage(View.INCORRECT_DATA_NOTIFICATION);
