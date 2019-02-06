@@ -7,11 +7,26 @@ public class Model {
     // The Program logic
 
     /**
-     * in this method concatenate strValue to get sentence
+     * This method concatenate strValue to get sentence
      * @param strValue
      */
-    public void assembleOurMessage(String strValue){
-        this.strValue = String.join(" ", this.strValue, strValue);
+//    public void assembleOurMessage(String strValue){
+//        this.strValue = String.join(" ", this.strValue, strValue);
+//    }
+
+
+    /**
+     * This method concatenate strValue to get sentence.
+     * If strValue wasn't already in sentence
+     * @param scan:Scanner
+     * @return :Integer
+     */
+    public int assembleOurMessage(String strValue){
+        if (!this.strValue.contains(strValue)) {
+            this.strValue = String.join(" ", this.strValue, strValue);
+            return 1;
+        }
+        return 0;
     }
 
     public String getValue() {
