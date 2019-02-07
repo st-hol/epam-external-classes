@@ -30,6 +30,7 @@ public class Game {
         for(Integer item : previousAttempts){
             System.out.print(" " + item);
         }
+        System.out.print("\n");
     }
 
     public void playGame(){
@@ -47,19 +48,17 @@ public class Game {
             previousAttempts.add(guessedNumber);
 
             if (guessedNumber <= checker.getLowerBound() || guessedNumber >= checker.getUpperBound()){
-                System.out.println("Out of range...");
+                System.out.print("Out of range...\n");
                 showStat();
                 continue;
             }
+            showStat();
             if (guessedNumber > opponent.getRightNumber()) {
                 checker.setUpperBound(guessedNumber);
-                showStat();
             } else if (guessedNumber < opponent.getRightNumber()) {
                 checker.setLowerBound(guessedNumber);
-                showStat();
             } else {
                 System.out.println(WINNER);
-                showStat();
                 break;
             }
         }
