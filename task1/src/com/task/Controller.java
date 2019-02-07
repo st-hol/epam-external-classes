@@ -28,8 +28,14 @@ public class Controller {
         view.printSentence(View.ASSEMBLED_SENTENCE, model.getValue());
     }
 
-
+    /**
+     * This method gets right input from user.
+     * It will request input until it get two words: HELLO and WORLD.
+     * @param scan:Scanner
+     * @return :String
+     */
     public String inputRightString(Scanner scan) {
+        /*will be incremented after getting suitable word*/
         int c = 0;
 
         while (c < 2) {
