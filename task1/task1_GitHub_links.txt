@@ -1,6 +1,0 @@
-
-1) https://github.com/st-hol/epam-external-classes/blob/normal-version/task1/src/com/task/Controller.java
-
-
-another solution (using HashMap):
-2) https://github.com/st-hol/epam-external-classes/blob/play-with-code/task1/src/com/task/Controller.java
