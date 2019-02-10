@@ -10,6 +10,7 @@ public class Controller {
     //public static  HashSet<String> MATCHES = new HashSet<>(Arrays.asList("Hello", "world!"));
     public static final String HELLO = "Hello";
     public static final String WORLD = "world!";
+    public static final int MAX_WORDS_QUANTITY = 2;
 
     // Constructor
     private Model model;
@@ -36,9 +37,9 @@ public class Controller {
      */
     public String inputRightString(Scanner scan) {
         /*will be incremented after getting suitable word*/
-        int c = 0;
+        int wordCounter = 0; //
 
-        while (c < 2) {
+        while (wordCounter < MAX_WORDS_QUANTITY) {
             view.printMessage(View.ENTER_STRING);
 
             while ( ! scan.hasNext(HELLO) &&  ! scan.hasNext(WORLD)) {
@@ -46,7 +47,7 @@ public class Controller {
                 scan.next();
             }
 
-            c += model.assembleOurMessage(scan.next());
+            wordCounter += model.assembleOurMessage(scan.next()); //increments in case unrepeatable and suitable word
         }
 
         return model.getValue();
