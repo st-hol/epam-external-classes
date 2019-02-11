@@ -1,70 +1,106 @@
 package com.game.guessnumber;
 
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Game {
 
     private Opponent opponent;
     private StatusChecker checker;
-    private ArrayList<Integer> previousAttempts = new ArrayList<>();
 
-    public Game(Opponent opponent){
+    public Game(Opponent opponent, StatusChecker checker){
         this.opponent = opponent;
-        this.checker = new StatusChecker();
+        this.checker = checker;
     }
 
     public int guessNumber(){
         Scanner sc = new Scanner(System.in);
 
-        View.printMessage(View.INPUT_INT_DATA);
+        StatusChecker.printMessage(StatusChecker.INPUT_INT_DATA);
         while( ! sc.hasNextInt()) {
-            View.printMessage(View.WRONG_INPUT_INT_DATA + View.INPUT_INT_DATA);
+            StatusChecker.printMessage(StatusChecker.WRONG_INPUT_INT_DATA + StatusChecker.INPUT_INT_DATA);
             sc.next();
         }
         return sc.nextInt();
     }
 
-    public void showStat(){
-        //View.printMessage("You made " + previousAttempts.size() + " attempts \nLog: ");
-        System.out.printf("You made %d attempts \nLog: ", previousAttempts.size());
-        for(Integer item : previousAttempts){
-            System.out.print(" " + item);
-        }
-        System.out.print("\n");
-    }
 
-    public void playGame(){
 
-        opponent.setRightNumber(Opponent.rand());
+    public void startGame() {
+        opponent.setSecretNumber(Opponent.rand());
 
-        //displays right answer. used for test
-        //System.out.println( + opponent.getRightNumber());
+        int guessedNumber;
+        int alreadyWonTheGame;
 
         while (true) {
-            System.out.printf("\nGuess a number in range [ %d and %d ] \n", checker.getLowerBound(), checker.getUpperBound());
+            System.out.printf(StatusChecker.GUESS_NUMBER, checker.getLowerBound(), checker.getUpperBound());
+            guessedNumber = guessNumber();
 
-            int guessedNumber = guessNumber();
-            previousAttempts.add(guessedNumber);
-
-            if (guessedNumber < checker.getLowerBound() || guessedNumber > checker.getUpperBound()){
-                System.out.print(View.OUT_OF_RANGE);
-                //showStat();
+            if (guessedNumber <= checker.getLowerBound() || guessedNumber >= checker.getUpperBound()) {
+                System.out.printf(StatusChecker.OUT_OF_RANGE, checker.getLowerBound(), checker.getUpperBound());
                 continue;
             }
-            //showStat();
-            if (guessedNumber > opponent.getRightNumber()) {
+
+            alreadyWonTheGame = opponent.playGame(guessedNumber);
+
+            if (alreadyWonTheGame == 1){
                 checker.setUpperBound(guessedNumber);
-                System.out.println("Number is LESS than your input.");
-            } else if (guessedNumber < opponent.getRightNumber()) {
+            }else if (alreadyWonTheGame == -1){
                 checker.setLowerBound(guessedNumber);
-                System.out.println("Number is LARGER than your input.");
-            } else {
-                System.out.println(View.WINNER);
-                showStat(); //in case of WIN we show the statictic
+            }else{
                 break;
             }
+
         }
     }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+//    public int getLowerBound(){
+//        StatusChecker checker = opponent.getChecker();
+//        return checker.getLowerBound();
+//    }
+//
+//    public int getUpperBound(){
+//        StatusChecker checker = opponent.getChecker();
+//        return checker.getUpperBound();
+//    }
+
+
+
+
+
+
+//        while (true) {
+//                System.out.printf(View.GUESS_NUMBER, checker.getLowerBound(), checker.getUpperBound());
+//                int guessedNumber = guessNumber();
+//                opponent.addFailToLog(guessedNumber);
+//
+//                if (guessedNumber <= checker.getLowerBound() || guessedNumber >= checker.getUpperBound()){
+//                System.out.printf(View.OUT_OF_RANGE, checker.getLowerBound(), checker.getUpperBound());
+//                continue;
+//                }
+//
+//                if (guessedNumber > opponent.getRightNumber()) {
+//                checker.setUpperBound(guessedNumber);
+//                System.out.println(View.LESS);
+//                } else if (guessedNumber < opponent.getRightNumber()) {
+//        checker.setLowerBound(guessedNumber);
+//        System.out.println(View.LARGER);
+//        } else {
+//        System.out.println(View.WINNER);
+//        View.showStat(opponent.getPreviousAttempts()); //in case of WIN we show the statictic
+//        break;
+//        }
+//        }
