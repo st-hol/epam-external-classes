@@ -2,22 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe7e8aed-24d8-432b-ac7f-d7110113ca10" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../task2/Test/com/game/guessnumber/OpponentTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../task1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../task1/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../task2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../task2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../task2/out/production/task2/com/game/guessnumber/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/../task2/out/production/task2/com/game/guessnumber/Game.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../task2/out/production/task2/com/game/guessnumber/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../task2/out/production/task2/com/game/guessnumber/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../task2/out/production/task2/com/game/guessnumber/Opponent.class" beforeDir="false" afterPath="$PROJECT_DIR$/../task2/out/production/task2/com/game/guessnumber/Opponent.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../task2/out/production/task2/com/game/guessnumber/StatusChecker.class" beforeDir="false" afterPath="$PROJECT_DIR$/../task2/out/production/task2/com/game/guessnumber/StatusChecker.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../task2/out/production/task2/com/game/guessnumber/View.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../task2/src/com/game/guessnumber/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/../task2/src/com/game/guessnumber/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../task2/src/com/game/guessnumber/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../task2/src/com/game/guessnumber/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../task2/src/com/game/guessnumber/Opponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/../task2/src/com/game/guessnumber/Opponent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../task2/src/com/game/guessnumber/StatusChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/../task2/src/com/game/guessnumber/StatusChecker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../task2/src/com/game/guessnumber/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/../task2/src/com/game/guessnumber/View.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../task2/task2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../task2/task2.iml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -44,7 +30,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Test/ua/training/calculator/ArithmeticsTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-338">
+            <state relative-caret-position="17">
               <caret line="15" selection-start-line="15" selection-end-line="16" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -219,6 +205,7 @@
       <workItem from="1549650301046" duration="8289000" />
       <workItem from="1549796764109" duration="56000" />
       <workItem from="1549907221890" duration="2404000" />
+      <workItem from="1550001460221" duration="55000" />
     </task>
     <servers />
   </component>
@@ -255,7 +242,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10749000" />
+    <option name="totallyTimeSpent" value="10804000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -268,9 +255,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25718608" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26096824" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -320,7 +306,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Test/ua/training/calculator/ArithmeticsTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-338">
+        <state relative-caret-position="17">
           <caret line="15" selection-start-line="15" selection-end-line="16" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />

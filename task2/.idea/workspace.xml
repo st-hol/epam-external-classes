@@ -1,24 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a2857252-c74a-40ec-9c3d-2ffa9a360b83" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Test/com/game/guessnumber/OpponentTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JUnitTest/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../JUnitTest/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../task1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../task1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/task2/com/game/guessnumber/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/task2/com/game/guessnumber/Game.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/task2/com/game/guessnumber/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/task2/com/game/guessnumber/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/task2/com/game/guessnumber/Opponent.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/task2/com/game/guessnumber/Opponent.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/task2/com/game/guessnumber/StatusChecker.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/task2/com/game/guessnumber/StatusChecker.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/task2/com/game/guessnumber/View.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/game/guessnumber/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/game/guessnumber/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/game/guessnumber/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/game/guessnumber/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/game/guessnumber/Opponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/game/guessnumber/Opponent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/game/guessnumber/StatusChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/game/guessnumber/StatusChecker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/game/guessnumber/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/game/guessnumber/View.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/task2.iml" afterDir="false" />
-    </list>
+    <list default="true" id="a2857252-c74a-40ec-9c3d-2ffa9a360b83" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,90 +10,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/game/guessnumber/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" selection-start-line="6" selection-end-line="8" selection-end-column="62" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/game/guessnumber/Game.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-36">
-              <caret line="31" column="24" lean-forward="true" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/game/guessnumber/View.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="27" column="7" selection-end-line="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/game/guessnumber/Opponent.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-459">
-              <caret line="6" column="22" lean-forward="true" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#549#550#0" expanded="true" />
-                <element signature="e#597#598#0" expanded="true" />
-                <element signature="e#703#704#0" expanded="true" />
-                <element signature="e#749#750#0" expanded="true" />
-                <element signature="e#784#785#0" expanded="true" />
-                <element signature="e#818#819#0" expanded="true" />
-                <element signature="e#996#997#0" expanded="true" />
-                <element signature="e#1033#1034#0" expanded="true" />
-                <element signature="e#1018#1019#0" expanded="true" />
-                <element signature="e#1057#1058#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Test/com/game/guessnumber/OpponentTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="31" column="9" lean-forward="true" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/game/guessnumber/StatusChecker.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-85">
-              <caret line="7" column="27" lean-forward="true" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
-              <folding>
-                <element signature="e#343#344#0" expanded="true" />
-                <element signature="e#387#388#0" expanded="true" />
-                <element signature="e#435#436#0" expanded="true" />
-                <element signature="e#479#480#0" expanded="true" />
-                <element signature="e#513#514#0" expanded="true" />
-                <element signature="e#546#547#0" expanded="true" />
-                <element signature="e#580#581#0" expanded="true" />
-                <element signature="e#613#614#0" expanded="true" />
-                <element signature="e#1364#1365#0" expanded="true" />
-                <element signature="e#1414#1415#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -183,7 +83,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549914642147" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549915062857" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -263,7 +163,7 @@
       <workItem from="1549551417549" duration="662000" />
       <workItem from="1549574143071" duration="3441000" />
       <workItem from="1549643319461" duration="698000" />
-      <workItem from="1549907277569" duration="7775000" />
+      <workItem from="1549907277569" duration="8381000" />
     </task>
     <servers />
   </component>
@@ -282,11 +182,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19711000" />
+    <option name="totallyTimeSpent" value="20317000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2647504" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -297,7 +196,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.36553946" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.36553946" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -369,13 +268,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/game/guessnumber/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" selection-start-line="6" selection-end-line="8" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Test/com/game/guessnumber/OpponentTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -434,8 +326,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/game/guessnumber/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-36">
-          <caret line="31" column="24" lean-forward="true" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
+        <state relative-caret-position="630">
+          <caret line="35" column="42" lean-forward="true" selection-start-line="35" selection-start-column="42" selection-end-line="35" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/game/guessnumber/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" selection-start-line="6" selection-end-line="8" selection-end-column="62" />
         </state>
       </provider>
     </entry>
