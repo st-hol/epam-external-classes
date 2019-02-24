@@ -1,18 +1,8 @@
 package ua.training.model;
 
-import ua.training.controller.InputNote;
+import ua.training.model.entity.InputNote;
 
 public class Model {
-
-    private InputNote note;
-
-    public Model(){
-        note = new InputNote();
-    }
-
-    public void setNote(InputNote note) {
-        this.note = note;
-    }
 
 
 }

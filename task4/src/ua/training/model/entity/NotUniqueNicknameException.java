@@ -1,4 +1,4 @@
-package ua.training.controller;
+package ua.training.model.entity;
 
 public class NotUniqueNicknameException extends Exception {
 

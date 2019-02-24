@@ -12,7 +12,10 @@ public interface Regex {
     String REGEX_PHONE = "((\\+?)\\d{2})?\\(?\\d{3}\\)?\\d{3}-?\\d{2}-?\\d{2}";
 
     // d'Ar-ta’nian
-    String REGEX_NAME = "([a-zA-z]{1,}'?-?’? ?){1,10}";
+    String REGEX_NAME_LAT = "([a-zA-z]{1,}'?-?’? ?){1,10}";
+    //
+    String REGEX_NAME_UKR = "^[А-ЯІЇЄ][а-яіїє']{1,20}$";
+
 
     String REGEX_NICKNAME = "[a-zA-Z0-9_.]{1,30}";
 
