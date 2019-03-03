@@ -1,0 +1,35 @@
+Create a console (WEB) application that satisfies the following
+requirements:
+1. Use the OOP features: classes, inheritance, polymorphism,
+encapsulation, abstract classes and interfaces.
+2. Each class must have a meaningful name and
+informative composition.
+3. Inheritance should be applied only when it makes sense.
+4. For coding, clearance agreements should be used.
+java code convention code and clean coding rules.
+5. The application must support working with Cyrillic (to be
+multilingual).
+6. Classes must be properly packaged.
+7. The application architecture must conform to the Model-View pattern.
+Controller.
+8. Work with the console (c WEB) or console (WEB) menu should be
+minimal.
+9. When implementing business logic algorithms, it is recommended to use
+GoF templates (if appropriate): Factory Method, Command, Builder,
+Strategy, State, Observer etc.
+10. You can use enum to store initialization parameters.
+(at least one complex enum must be implemented), files or DB.
+11. The code should contain comments.
+12. Must be present JUnit - tests.
+
+
+
+variant number 6: Stones)
+
+  Determine the hierarchy of precious and semi-precious stones.
+Select stones for necklaces.
+* Calculate the total weight (in carats) and
+cost
+** Sort the necklace stones based on their value.
+*** Find the stones in the necklace that match the specified range
+transparency options.
